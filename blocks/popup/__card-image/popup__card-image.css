@@ -1,0 +1,9 @@
+.popup__card-image {
+    max-width: 80vw;
+    max-height: 80vh;
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+
+}
