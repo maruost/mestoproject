@@ -12,7 +12,7 @@
 <body>
   <div class="root">
     <header class="header root__section">
-      <img src="./images/logo.svg" alt="mesto logo" class="logo">
+      <img src="<%=require('./images/logo.svg')%>"alt="mesto logo" class="logo">
     </header>
     <div class="profile root__section">
       <div class="user-info">
@@ -46,14 +46,14 @@
     <div id="popup-image" class="popup">
       <div class="popup__container">
         <img src = "" class="popup__card-image">
-        <img src="./images/close.svg" alt="" class="popup__close" id="popup-image-close">
+        <img src="<%=require('./images/close.svg')%>" alt="" class="popup__close" id="popup-image-close">
 
       </div>
     </div>
 
     <div id="popup-add" class="popup">
       <div class="popup__content">
-        <img src="./images/close.svg" alt="" class="popup__close" id="popup-add-close">
+        <img src="<%=require('./images/close.svg')%>" alt="" class="popup__close" id="popup-add-close">
         <h3 class="popup__title">Новое место</h3>
         <form class="popup__form" name="cards">
           <input type="text" name="name" class="popup__input popup__input_type_name" placeholder="Название" required
@@ -70,7 +70,7 @@
 
     <div id="popup-edit" class="popup">
       <div class="popup__content">
-        <img src="./images/close.svg" alt="" class="popup__close" id="popup-edit-close">
+        <img src="<%=require('./images/close.svg')%>" alt="" class="popup__close" id="popup-edit-close">
         <h3 class="popup__title">Редактировать профиль</h3>
         <form class="popup__form" name="userInfo">
           <input type="text" name="user" class="popup__input popup__input_type_name" placeholder="Имя" required
@@ -84,14 +84,14 @@
       </div>
     </div>
   </div>
-  <script src="./scripts/data.js"></script>
+  <!-- <script src="./scripts/data.js"></script>
   <script src="./scripts/API.js"></script>
   <script src="./scripts/Card.js"></script>
   <script src="./scripts/CardList.js"></script>
   <script src="./scripts/Popup.js"></script>
   <script src="./scripts/PopupImage.js"></script>
   <script src="./scripts/UserInfo.js"></script>
-  <script src="./scripts/FormValidator.js"></script>
+  <script src="./scripts/FormValidator.js"></script> -->
   <script src="<%= htmlWebpackPlugin.files.js %>"></script>
 </body>
 
