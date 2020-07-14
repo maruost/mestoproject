@@ -6,6 +6,7 @@ import FormValidator from "./scripts/FormValidator";
 import Popup from "./scripts/Popup";
 import PopupImage from "./scripts/PopupImage";
 import UserInfo from "./scripts/UserInfo";
+import "./images/close.svg";
 
 
 (function () {
