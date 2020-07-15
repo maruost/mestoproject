@@ -93,7 +93,6 @@ import "./images/close.svg";
     })
 
   const createCardsArray = function (res) {
-    console.log(res)
     const array = [];
     res.forEach((card) => {
       array.push(new Card(

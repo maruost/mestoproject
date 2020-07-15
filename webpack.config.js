@@ -34,32 +34,35 @@ module.exports = {
         {
             test: /\.css$/i,
             use: [
-                            (isDev ? 'style-loader' : MiniCssExtractPlugin.loader),
-                            'css-loader', 
-                            'postcss-loader'
-                    ]
-    },
-    {
-        test: /\.(png|jpg|gif|ico|svg)$/i,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-                name: "./images/[name].[ext]",
-              esModule: false
-            }
-          },
-          {
-            loader: 'image-webpack-loader',
-            options: {
-            }
-          }
-        ],
-      },
-     {
-        test: /\.(eot|ttf|woff|woff2)$/,
-        loader: 'file-loader?name=./vendor/[name].[ext]'
-    }
+                isDev ? 'style-loader' : MiniCssExtractPlugin.loader, {
+                    loader: 'css-loader',
+                    options: {
+                        importLoaders: 2
+                    }
+                }, 'postcss-loader'
+            ]
+        },
+        {
+            test: /\.(png|jpg|gif|ico|svg)$/i,
+            use: [
+                {
+                    loader: 'file-loader',
+                    options: {
+                        name: "./images/[name].[ext]",
+                        esModule: false
+                    }
+                },
+                {
+                    loader: 'image-webpack-loader',
+                    options: {
+                    }
+                }
+            ],
+        },
+        {
+            test: /\.(eot|ttf|woff|woff2)$/,
+            loader: 'file-loader?name=./vendor/[name].[ext]'
+        }
         ]
     },
     plugins: [
@@ -68,10 +71,10 @@ module.exports = {
             assetNameRegExp: /\.css$/g,
             cssProcessor: require('cssnano'),
             cssProcessorPluginOptions: {
-                    preset: ['default'],
+                preset: ['default'],
             },
             canPrint: true
-    }),
+        }),
         new HtmlWebpackPlugin({
             inject: false,
             template: './src/index.html',
