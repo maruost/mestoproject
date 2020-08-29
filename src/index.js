@@ -1,3 +1,13 @@
+import "./pages/index.css";
+import Api from "./scripts/API";
+import Card from "./scripts/Card";
+import CardList from "./scripts/CardList";
+import FormValidator from "./scripts/FormValidator";
+import Popup from "./scripts/Popup";
+import PopupImage from "./scripts/PopupImage";
+import UserInfo from "./scripts/UserInfo";
+import "./images/close.svg";
+
 
 (function () {
 
@@ -17,7 +27,7 @@
   const cardTemplate = document.querySelector('#place-card-template').content;
 
   const config = {
-    url: 'https://praktikum.tk/cohort11/',
+    url:  (NODE_ENV === 'production' ? 'https://praktikum.tk/cohort11/':'http://praktikum.tk/cohort11/'),
     headers: {
       authorization: '9fac4592-874a-4417-87e6-37c86c526c4e',
       'Content-Type': 'application/json'
@@ -83,7 +93,6 @@
     })
 
   const createCardsArray = function (res) {
-    console.log(res)
     const array = [];
     res.forEach((card) => {
       array.push(new Card(
