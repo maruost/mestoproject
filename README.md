@@ -27,4 +27,4 @@ ES6, Babel, OOP, CSS3, HTML5, Webpack, BEM
 ## Ссылка на github pages:
 https://maruost.github.io/mestoproject/
 
-В проекте используется сторонний учебный API, доступ к которому остановлен. В дальнейших планах доработать приложение и использовать собственный API https://github.com/maruost/mesto_deploy. 
+*В проекте используется сторонний учебный API, доступ к которому остановлен. В дальнейших планах доработать приложение и использовать собственный API https://github.com/maruost/mesto_deploy. 
