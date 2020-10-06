@@ -2,7 +2,7 @@
 ### приложение, в котором можно поделиться любимыми местами
 
 ## Стэк технологий:
-ES6, Babel, OOP, CSS3, HTML5, Webpack, BEM
+ES6, Babel, ООП, CSS3, HTML5, Webpack, BEM
 
 ## Пакеты которые используются в сборках:
 - [Babel CLI](https://babeljs.io/docs/en/babel-cli#docsNav)
