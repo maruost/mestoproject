@@ -4,9 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackMd5Hash = require('webpack-md5-hash');
 const webpack = require('webpack');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
-// подключаем плагин
 const isDev = process.env.NODE_ENV === 'development';
-// создаем переменную для development-сборки
 
 module.exports = {
     entry: { main: './src/index.js' },
@@ -15,7 +13,7 @@ module.exports = {
         filename: '[name].[chunkhash].js'
     },
     module: {
-        rules: [{ // тут описываются правила
+        rules: [{ 
             test: /\.js$/,
             exclude: /node_modules/,
             use: {

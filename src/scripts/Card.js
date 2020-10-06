@@ -32,10 +32,6 @@ export default class Card {
   }
 
   _remove = () => {
-    /** REVIEW: Можно лучше:
-     * 
-     * Вынести удаление обработчиков в отдельный метод, например _removeEventListeners
-     */
     this._likeIcon.removeEventListener('click', this._like)
     this._deleteIcon.removeEventListener('click', this._remove)
     this._image.removeEventListener('click', this.openImg);
