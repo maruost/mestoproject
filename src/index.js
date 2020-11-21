@@ -27,7 +27,7 @@ import "./images/close.svg";
   const cardTemplate = document.querySelector('#place-card-template').content;
 
   const config = {
-    url:  (NODE_ENV === 'production' ? 'https://praktikum.tk/cohort11/':'http://praktikum.tk/cohort11/'),
+    url:  (NODE_ENV === 'production' ? 'https://nomoreparties.co/cohort11/':'http://nomoreparties.co/cohort11/'),
     headers: {
       authorization: '9fac4592-874a-4417-87e6-37c86c526c4e',
       'Content-Type': 'application/json'
